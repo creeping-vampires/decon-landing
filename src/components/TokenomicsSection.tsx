@@ -1,5 +1,6 @@
 import React from "react";
 import { PieChart, Wallet, Lock, Heart, Users } from "lucide-react";
+import { motion } from "framer-motion";
 
 const TokenomicsSection = () => {
   const allocations = [
@@ -26,18 +27,26 @@ const TokenomicsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-purple-900/20" id="tokenomics">
+    <section className="py-20 px-4 " id="tokenomics">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-pixel mb-4 text-center gradient-text">
+        <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-yellow-400 to-purple-400 text-transparent bg-clip-text">
           Tokenomics
         </h2>
+
         <div className="text-center mb-12">
-          <p className="text-2xl font-comic text-primary">
+          <p className="text-sm mt-8 font-comic text-purple-200">
             100% Community Owned
           </p>
-          <p className="text-xl font-pixel mt-4 text-accent animate-bounce">
+
+          <p className="text-sm font-comic text-purple-200">
+            No team tokens, no VC allocation, just vibes and mental health 🧠✨
+          </p>
+
+          <p className="text-xl  font-pixel mt-4 text-accent animate-bounce">
             ai16z soon!
           </p>
+
+          <div className="mt-8 text-center"></div>
         </div>
         {/* <div className="grid md:grid-cols-4 gap-6">
           {allocations.map((item) => (
@@ -81,12 +90,6 @@ const TokenomicsSection = () => {
             ))}
           </div>
         </div> */}
-
-        <div className="mt-8 text-center">
-          <p className="text-sm font-comic text-purple-200">
-            No team tokens, no VC allocation, just vibes and mental health 🧠✨
-          </p>
-        </div>
       </div>
     </section>
   );

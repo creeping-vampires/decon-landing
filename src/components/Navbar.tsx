@@ -29,7 +29,7 @@ const Navbar = () => {
                 src="/dr-icon.png"
                 alt="Dr. ILL - Your AI Therapist"
                 className="w-full  transition-shadow duration-300"
-                style={{ height: 50, width: 50 }}
+                style={{ height: 25, width: 25 }}
               />
             </div>
             <span className="text-2xl font-bold text-primary">$DrILL</span>
